@@ -6,6 +6,8 @@ plot_map <- function(values, title = "", zlim = range(values, na.rm = TRUE),
   m <- matrix(NA_real_, nrow = 720, ncol = 360)
   m[cbind(round((lon + 180) / 0.5 + 0.5), round((lat + 90) / 0.5 + 0.5))] <-
     pmin(pmax(values, zlim[1]), zlim[2])
+  op <- par(bg = "white", fg = "black", col.axis = "black", col.main = "black")
+  on.exit(par(op), add = TRUE) # white background, black text: readable in dark mode too
   layout(matrix(1:2, ncol = 2), widths = c(6, 1))
   par(mar = c(2, 2, 3, 1))
   image(seq(-179.75, 179.75, 0.5), seq(-89.75, 89.75, 0.5), m, zlim = zlim,
