@@ -1,5 +1,5 @@
 # Helper to draw a global map of one value per grid cell (0.5 degree resolution).
-# Uses the vectors `lon` and `lat` (one entry per cell) read in hands_on_session_1.R.
+# Uses the vectors `lon` and `lat` (one entry per cell) read in hands_on_session.R.
 # Values outside zlim are drawn in the colour of the nearest end of the scale.
 plot_map <- function(values, title = "", zlim = range(values, na.rm = TRUE),
                      col = hcl.colors(100, "YlGn", rev = TRUE)) {

@@ -1,4 +1,4 @@
-# CLEWS hands-on session 1 (browser version)
+# CLEWS hands-on session (browser version)
 
 Students run the hands-on R script in their browser with [webR](https://docs.r-wasm.org/webr/latest/),
 which is R compiled to WebAssembly. They don't install anything or register anywhere: one link opens
@@ -15,7 +15,7 @@ selection), so every command in the script is kept on a single line. The first r
 
 | File | Purpose |
 |---|---|
-| `hands_on_session_1.R` | The session script, adapted for the browser (see below) |
+| `hands_on_session.R` | The session script, adapted for the browser (see below) |
 | `plot_map.R` | Small base-R map helper, opened as a second tab and loaded with `source()` |
 | `data/lpjml_lecture.zip` | LPJmL output (SSP5-8.5, MPI-ESM1-2-HR): `grid`, `terr_area`, and `fpc` cut to 2015–2025 and 2085–2095 |
 | `tools/make_link.py` | Writes the data URL into the script and prints the share link |

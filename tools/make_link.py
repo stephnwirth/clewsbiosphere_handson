@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create a webR share link that opens hands_on_session_1.R (and plot_map.R) in the browser IDE.
+"""Create a webR share link that opens hands_on_session.R (and plot_map.R) in the browser IDE.
 
 Usage:
     python3 tools/make_link.py OWNER/REPO [--branch main] [--webr latest]
@@ -18,7 +18,7 @@ import urllib.parse
 import zlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-SCRIPT = ROOT / "hands_on_session_1.R"
+SCRIPT = ROOT / "hands_on_session.R"
 HELPERS = [ROOT / "plot_map.R"]  # opened as extra tabs, sourced by the script
 
 ap = argparse.ArgumentParser()

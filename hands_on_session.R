@@ -1,4 +1,4 @@
-# Hands-on session 1: browser version
+# Hands-on session: browser version
 # R runs inside this browser tab (webR). Nothing is installed on your computer.
 # Put the cursor on a line and press Ctrl+Enter (Cmd+Enter on a Mac) to run it.
 # Every command fits on one line, so you can step through the script line by line.
